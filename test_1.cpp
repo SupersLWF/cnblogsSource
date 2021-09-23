@@ -54,14 +54,14 @@ int main()
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
     
-	// Init GLEW to manage OpenglFuncptr(Because of GLEW,we can use OpenglFunc)
+    // Init GLEW to manage OpenglFuncptr(Because of GLEW,we can use OpenglFunc)
     // ---------------------------------------
-	glewExperimental = GL_TRUE;
-	if (glewInit() != GLEW_OK)
-	{
-		std::cout << "Failed to initialize GLEW" << std::endl;
-		return -1;
-	}
+    glewExperimental = GL_TRUE;
+    if (glewInit() != GLEW_OK)
+    {	
+	std::cout << "Failed to initialize GLEW" << std::endl;
+	return -1;
+    }
 
 
 // build and compile our shader program
